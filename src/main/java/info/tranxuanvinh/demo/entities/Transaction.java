@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -15,6 +16,7 @@ public class Transaction extends AbstractEntity {
 	 */
 	private static final long serialVersionUID = -1884046366580295662L;
 
+	@Id
 	private Integer id;
 	private String accountNumber;
 	private String accountName;
